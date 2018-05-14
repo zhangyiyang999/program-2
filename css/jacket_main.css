@@ -1,0 +1,193 @@
+/* 推荐栏样式 */
+.recommend_border{
+    overflow: hidden;
+    margin-top: 15px;
+    border: 1px solid #e1e1e1;
+    margin: 0 auto;
+    width: 1200px;
+}
+.recommend{
+    margin: 20px 0;
+    float: left;
+    width: 25%;
+}
+.recommend_left{
+    float: left;
+    margin-left: 30px;
+    text-align: center;
+}
+.recommend_left a{
+    display: block;
+}
+.recommend_left a .title{
+    padding: 2px;
+    font-size: 14px;
+    color: #333;
+    font-weight: 700;
+}
+.recommend_left .imgWrap{
+    margin-top: 10px;
+    display: block;
+}
+.recommend_left .imgWrap img{
+    display: block;
+    width: 60px;
+}
+.recommend_right{
+    float: left;
+    margin-left: 15px;
+}
+.recommend_right ul li{
+    margin-bottom: 10px;
+    color: #666;
+}
+/* 主体样式 */
+.main{
+    margin: 0 auto;
+    width: 1200px;
+}
+/* 排序栏样式 */
+.main_top{
+    margin-top: 10px;
+    background: #f8f8f8;
+    border: 1px solid #e1e1e1;
+}
+.mainTop_left{
+    float: left;
+}
+.main_top .mainTop_left .on{
+    background: #fff;
+}
+.main_top .mainTop_left .borderright{
+    border-right: 1px solid #e1e1e1;
+}
+.main_top .mainTop_left .fashion{
+    display: block;
+    float: left;
+    padding: 0 20px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid transparent;
+}
+/* 排序栏 价格排序 样式 */
+.main_top .mainTop_left .price{
+    position: relative;
+    display: block;
+}
+.main_top .mainTop_left .price span{
+    display: block;
+    float: left;
+}
+.main_top .mainTop_left .price .priceArrow{
+    margin-left: 3px;
+    width: 10px;
+    height: 40px;
+    background: url(http://s17.mogucdn.com/p1/160726/idid_ie4wezrsgy2gey3ghezdambqgqyde_9x5.png) no-repeat center center;
+    background-size: 10px;
+}
+.main_top .mainTop_left .price .priceDesc{
+    display: none;
+    position: absolute;
+    top: -2px;
+    left: 0;
+    width: 106px;
+    border: 1px solid #c5c5c5;
+    background-color: #fff;
+    z-index: 10;
+}
+/* 价格区间部分样式 */
+.main_top .mainTop_right{
+    float: left;
+    margin-left: 22px;
+    height: 40px;
+    line-height: 40px;
+}
+.main_top .mainTop_right input{
+    width: 62px;
+    height: 22px;
+    border: 1px solid #eaeaea;
+}
+.main_top .mainTop_right .sure{
+    padding: 4px 5px;
+    border: 1px solid #eaeaea;
+    background: #fff;
+}
+/* 主题内容样式 */
+.main_container{
+    width: 1200px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+.main_container ul{
+    margin-right: -20px;
+}
+.main_container ul .main_box{
+    width: 224px;
+    height: 387px;
+    position: relative;
+    margin: 0 20px 20px 0;
+    float: left;
+}
+.main_container ul .main_box .pic_box{
+    position: relative;
+    width: 224px;
+    overflow: hidden;
+    background: url(https://s10.mogucdn.com/mlcdn/c45406/170609_2iihha256bi8207b8b5g2bj7dablb_120x120.png) no-repeat center center;
+}
+.main_container ul .main_box .pic_box a{
+    display: block;
+    padding-top: 336px;
+    background-image: url(http://s3.mogucdn.com/mlcdn/c45406/180404_811l1jeda0ai2g2b4dg07f86igj07_640x960.jpg);
+    background-size: cover;
+}
+.main_container ul .main_box .price_box{
+    width: 224px;
+    margin-top: 5px;
+    height: 30px;
+    line-height: 30px;
+}
+.main_container ul .main_box .price_box .priceBox_left{
+    font-size: 16px;
+    color: #f36;
+    float: left;
+}
+.main_container ul .main_box .price_box .priceBox_right{
+    float: right;
+}
+.main_container ul .main_box .price_box .priceBox_right .price-i{
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    background: url(http://s2.mogucdn.com/mlcdn/c45406/170328_88giad0l4lcl61kg8ak02567ddhfd_32x30.png) no-repeat center;
+    background-size: 100%;
+}
+.main_container ul .main_box .price_box .priceBox_right .price-n{
+    color: #999;
+    line-height: 14px;
+    margin-left: 3px;
+
+}
+.main_container ul .main_box .text_link{
+    color: #666;
+    display: block;
+    height: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+.main_container ul .main_box .text_link span{
+    
+}
+
+/* 解决高度塌陷 */
+.main_top .mainTop_left:after, .main_top:after,.clearfix:after,.price_box:after{
+    clear: both;
+    content: "";
+    display: block;
+    visibility: hidden;
+    height: 0;
+}

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商品详情页</title>
+    <link rel="stylesheet" href="public\font-awesome-4.7.0\css\font-awesome.min.css">
+    <!-- 引入图标库 -->
+    <link rel="stylesheet" href="public/css/base.css">
+    <!-- 引入重置页面样式 -->
+    <link rel="stylesheet" href="css/details_nav.css">
+    <!-- 引入nav样式 -->
+    <link rel="stylesheet" href="css/details.css">
+    <!-- 引入详细页面样式 -->
+    <link rel="stylesheet" href="css/foot.css">
+    <!-- 引入底部样式 -->
+   
+</head>
+<body>
+    <!-- 头部开始 -->
+    <div class="header_border">
+        <div class="header">
+            <ul>
+                <li class="go_home"><a><i class="home"></i>美丽说首页</a></li>
+                <li><a><i class="weixin"></i>微信登录</a></li>
+                <li><a><i class="qq"></i>QQ登录</a></li>
+                <li><a>登录</a></li>
+                <li><a>注册</a></li>
+                <li class="drop">
+                    <a><i class="collect"></i>我的收藏</a>
+                    <ul class="ul_down">
+                        <li><a href="">收藏宝贝</a></li>
+                        <li><a href="">收藏店铺</a></li>
+                    </ul>
+                </li>
+                <li class="drop drop_car"><a><i class="car"></i>我的购物车</a></li>
+                <li><a><i class="order"></i>我的订单</a></li>
+                <li>
+                    <a>帮助中心<i class="down"></i></a>
+                    <ul class="ul_down">
+                        <li><a href="">买家服务</a></li>
+                        <li><a href="">商家服务</a></li>
+                        <li><a href="">规则中心</a></li>
+                    </ul>
+                </li>
+                <li class="drop"><a class="last">商家后台</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 店铺公共头部开始 -->
+    <div class="shopHeader_border">
+        <div class="shop_header">
+            <div class="shop_info">
+                <a href="#" title="店铺头像" class="head">
+                    <img src="http://s3.mogucdn.com/b7/avatar/140101/m08r3_kqzemuckkrbegwlwgfjeg5sckzsew_200x200.jpg_100x100.jpg" alt="" class="head_img">
+                </a>
+                <div class="shop_name">
+                    <div class="shopName_top">
+                        <a href="http://s.meilishuo.com/14h48"title="小贝家">小贝家</a>
+                    </div>
+                    <!-- 评分详细开始  -->
+                    <div class="shop_score">
+                        <p>
+                            <span class="s-cat">描述<b class="low">4.59</b></span>
+                            <span class="s-cat">价格<b>5.00</b></span>
+                            <span class="s-cat">质量<b class="low">4.61</b></span>
+                            <span class="s-cat">服务<b class="low">4.77</b></span>
+                        </p>
+                    </div>
+                </div>
+                <div class="shop_action">
+                    <a href="#" class="collect">收藏</a>
+                    <a href="#" class="chart">
+                        <div class="chart_btn">联系客服</div>
+                    </a>
+                </div>
+                <div class="line_right"></div>
+               
+            </div>
+             <!-- 搜索框开始 -->
+             <div class="shop_search ">
+                <div class="shopSearch_form">
+                    <form action="">
+                        <div class="clearfix">
+                            <input type="text"  class="search_text"  name="searchKey" placeholder="输入你想要的商品...">
+                            <a href="#" class="search-inshop">搜本店</a>
+                            <input type="submit" class="submit-btn" value="搜全站">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- topbanner -->
+    <div class="top_banner">
+        <a href="#" class="top_img"></a>
+    </div>
+    <!-- topNavigation -->
+    <div class="topNavigation_border">
+        <div class="top_navigation">
+            <ol>
+                <li><a href="http://s.meilishuo.com/14h48">首页</a></li>
+                <li class="aLi"><a href="http://s.meilishuo.com/14h48/index/total">全部商品</a></li>
+            </ol>
+            <div class="top_nav2">
+                <dl>
+                    <dd class="subMenu">
+                        <a href="http://s.meilishuo.com/14h48/list/index?categoryId=9217">2018新款</a>
+                    </dd>
+                    <dd class="subMenu">
+                        <a href="http://s.meilishuo.com/14h48/list/index?categoryId=43944">裤子</a>
+                    </dd>
+                    <dd class="subMenu">
+                        <a href="http://s.meilishuo.com/14h48/list/index?categoryId=43945">上衣</a>
+                    </dd>
+                    <dd class="subMenu">
+                        <a href="http://s.meilishuo.com/14h48/list/index?categoryId=43949">裙子</a>
+                    </dd>
+                    <dd class="subMenu">
+                        <a href="http://s.meilishuo.com/14h48/list/index?categoryId=43950">套装</a>
+                    </dd>
+                    <dd class="subMenu">
+                        <a href="http://s.meilishuo.com/14h48/list/index?categoryId=67643">清仓促销</a>
+                    </dd>
+                    <dd class="subMenu">
+                        <a href="http://s.meilishuo.com/14h48/list/index?categoryId=68110">牛仔裤</a>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div> 
+    <!-- 商品详细信息 -->
+    <div class="commodity_border">
+        <div class="commodity_top">
+            <div class="commodityTop_left">
+                <div class="commodityTopLeft_banner">
+                    <div class="big_img">
+                        <img src="http://s3.mogucdn.com/mlcdn/c45406/171108_1450ijh6i4k35kih22jlb195he027_640x960.jpg_468x468.jpg"/>
+                    </div>
+                    <div class="smallImgs">
+                        <div class="box">
+                                <ul  style="left: 0px;">
+                                    <li class="">
+                                        <img src="http://s3.mogucdn.com/mlcdn/c45406/171108_37hik088i3e6i7k5k66aj1j8cekgf_640x960.jpg_100x100.jpg">
+                                        <i></i>
+                                    </li>
+                                    <li class="c">
+                                        <img src="http://s3.mogucdn.com/mlcdn/c45406/171108_1450ijh6i4k35kih22jlb195he027_640x960.jpg_100x100.jpg">
+                                        <i></i>
+                                    </li>
+                                    <li class="">
+                                        <img src="http://s3.mogucdn.com/mlcdn/c45406/171108_2hb0bil7jag29eg30gkkic29k681e_640x960.jpg_100x100.jpg">
+                                        <i></i>
+                                    </li>
+                                    <li class="">
+                                        <img src="http://s3.mogucdn.com/mlcdn/c45406/171108_497d0716i3g21ek80hgjl0d5j92ag_640x960.jpg_100x100.jpg">
+                                        <i></i>
+                                    </li>
+                                    <li class="">
+                                        <img src="http://s3.mogucdn.com/mlcdn/c45406/171108_559h38cjlcigih476jbdi34fi3j2h_640x960.jpg_100x100.jpg">
+                                        <i></i>
+                                    </li>
+                                    <li class="">
+                                        <img src="http://s3.mogucdn.com/mlcdn/c45406/171108_50j93i0h165696gia9g08e364hijf_640x960.jpg_100x100.jpg">
+                                        <i></i>
+                                    </li>
+                                </ul>
+                        </div>
+                        <a href="" class="left_btn"></a>
+                        <a href="" class="right_btn"></a>
+                    </div>
+                </div>
+                <div class="commodityTopLeft_right">
+                    <div class="commodityTopLeftRight_box">
+                        <h1 class="commodity_title">春夏季新款韩版宽松高腰弹力显瘦学院风磨边毛边流苏百搭裤不规则水洗微喇叭裤牛仔裤女九分裤子女</h1>
+                        <div class="commodity_price">
+                            <dl class="commodity_oprice">
+                                <dt class="property-type-origin">价格：</dt>
+                                <dd class="property-cont-origin">¥91.67</dd>
+                            </dl>
+                            <dl class="commodity_nprice">  
+                                <dt class="property-type-now"> 促销价 ：</dt>
+                                <dd class="property-cont-now">¥64.00</dd>
+                                <dd class="property-extra">
+                                <span class="mr10">评价：<span class="num">909</span></span>
+                                <span>累计销量：<span class="num"> 4726</span></span>
+                                </dd>
+                            </dl>
+                        </div>
+                        <dl class="commodity_service">
+                            <dt>客服：</dt>
+                            <dd>
+                            <div style="cursor:pointer">联系客服</div>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 底部样式开始 -->
+    <div class="foot_border">
+        <div class="foot">
+            <div class="foot_top">
+                <div class="flist">
+                    <h4>买家帮助</h4>
+                    <div class="foot_link">
+                        <a href="" target="_blank">新手指南</a>
+                    </div>
+                    <div class="foot_link">
+                        <a href="" target="_blank">服务保障</a>
+                    </div>
+                    <div class="foot_link">
+                        <a href="" target="_blank">常见问题</a>
+                    </div>
+                    <div class="foot_link">
+                        <a href="" target="_blank">风险监测</a>
+                    </div>
+                </div>
+                <div class="flist">
+                    <h4>商家帮助</h4>
+                    <div class="foot_link">
+                        <a href="" target="_blank">供货商招募</a>
+                    </div>
+                    <div class="foot_link">
+                        <a href="" target="_blank">商家后台</a>
+                    </div>
+                </div>
+                <div class="flist">
+                    <h4>关于我们</h4>
+                    <div class="foot_link">
+                        <a href="" target="_blank">关于美丽说</a>
+                    </div>
+                    <div class="foot_link">
+                        <a href="" target="_blank">联系我们</a>
+                    </div>
+                </div>
+                <div class="flist aboutus">
+                    <h4>关注我们</h4>
+                    <div class="foot_link">
+                        <a href="" target="_blank"><span class="footer_icon_sina"></span>新浪微博</a>
+                    </div>
+                    <div class="foot_link">
+                        <a href="" target="_blank"><span class="footer_icon_qzone"></span>QQ空间</a>
+                    </div>
+                    <div class="foot_link">
+                        <a href="" target="_blank"><span class="footer_icon_tencent"></span>腾讯微博</a>
+                    </div>
+                </div>
+                <div class="flist service">
+                    <h4>美丽说微信服务号</h4>
+                    <img class="qrcode" src="https://s10.mogucdn.com/mlcdn/c45406/170612_54f23kd09hehlc8je4fdbf2ef6f6c_100x100.jpg" alt="美丽说服务号二维码">
+                </div>
+                <div class="flist last">
+                    <h4>美丽说客户端下载</h4>
+                    <img class="qrcode" src="https://s10.mogucdn.com/p2/160802/7e_74j23d2a5f5j3bj31h70375gbeec1_100x100.png">
+                </div>
+            </div>
+            <div class="foot_bottom"> 
+                Copyright ©2017 Meilishuo.com &nbsp;
+                <a href="https://s10.mogucdn.com/new1/v1/bmisc/518ea1bbd36948b90e658485d2700e62/181714310539.pdf">电信与信息服务业务经营许可证100798号</a>&nbsp;
+                <a href="https://s10.mogucdn.com/p1/160811/idid_ifrtszjqmmzdazrumezdambqhayde_2436x3500.jpg">经营性网站备案信息</a>&nbsp;
+                <br> 京ICP备11031139号&nbsp; 京公网安备110108006045&nbsp;&nbsp; 客服电话：4000-800-577&nbsp; 文明办网文明上网举报电话：010-82615762 &nbsp;
+                <a href="http://net.china.com.cn/index.htm">违法不良信息举报中心</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

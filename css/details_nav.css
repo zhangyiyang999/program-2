@@ -1,0 +1,87 @@
+.header_border{
+    width: 100%;
+    height:30px;
+    font-size: 12px;
+    color: #666;
+    line-height: 30px;
+    background-color: #F8F8F8;
+}
+.header{
+    width: 1200px;
+    margin: 0 auto;
+}
+.header>ul>li{
+    float: left;
+    display: inline-block;
+    text-align: center;
+}
+.header ul li a{
+    border-right: 1px dotted #ccc;
+    padding: 0 18px;
+    display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    cursor: pointer;
+    color: #666;
+    text-decoration: none;
+}
+/* 头部特殊样式 */
+.header ul .go_home a{
+    margin-right: 200px;
+    border: 0;
+}
+.header ul li .last{
+    border: 0;
+}
+.header ul li a:hover{
+    color: rgba(255, 0, 0, 0.678);
+}
+/* 头部隐藏ul样式 */
+.header .ul_down{
+    position: absolute;
+    top: 30px;
+    z-index: 999;
+    background-color: #F8F8F8;
+    padding: 8px 0;
+    border: 1px solid #eee;
+    line-height: 20px;
+    display: none;
+    margin-left: 10px;
+}
+.header .ul_down li a{
+    margin-bottom: 3px;
+    border: 0;
+}
+
+/* 图标样式 */
+.header i{
+    display: inline-block;
+    width: 18px;
+    height: 16px;
+    vertical-align: sub;
+    margin-right: 7px;
+    background: url(../img/icon.png) no-repeat;
+}
+.header i.home{
+    background-position: 0 0;
+}
+.header i.weixin{
+    background-position: -25px 0;
+}
+.header i.qq{
+    background-position: -52px 0;
+}
+.header i.collect{
+    background-position: -76px 0;
+}
+.header i.car{
+    background-position: -102px 0;
+}
+.header i.order{
+    background-position: -130px 0;
+}
+.header i.down{
+    width: 6px;
+    margin-left: 10px;
+    background-position: -180px 0;
+}

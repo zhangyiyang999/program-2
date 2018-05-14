@@ -1,0 +1,101 @@
+/* 轮播图样式 */
+.banner{
+    width: 1200px;
+    margin: auto;
+    clear: left;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    background: red;
+}
+.banner ul{
+    width: 100%;
+    z-index: 0;
+}
+.banner ul li {
+    width: 100%;
+    position: absolute;
+}
+.banner ul li a img{
+    display: block;
+    height: 400px;
+    overflow: hidden;
+}
+/* title样式 */
+.wrap{
+    margin: 40px auto 20px;
+    width: 1200px;
+}
+.title{
+    font-size: 20px;
+    line-height: 28px;
+}
+.title_right{
+    float: right;
+    margin-top: 5px;
+    color: #6f6f6f;
+}
+/* 主体瀑布流样式 */
+.main_wrap{
+    position: relative;
+    width: 1200px;
+    margin:  0 auto;
+    height: 424px;
+}
+.wrap_box{
+    position: absolute;
+}
+.wrap_box .pic_box{
+    width: 224px;
+    height: 340px;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    background-image: url(../img/wrap1.jpg);
+    background-size: cover;
+
+}
+.wrap_box_bottom{
+    width:224px;
+    height:58px;
+}
+.part{
+    margin-top: 5px;
+    height: 30px;
+    line-height: 30px;
+}
+.part .price{
+    display: inline-block;
+    font-size: 16px;
+    color: #f36;
+    margin-right: 2px;
+}
+.part .collect{
+    float: right;
+    line-height: 14px;
+    font-size: 14px;
+    margin-top: 6px;
+    margin-left: 3px;
+    color: #999;
+}
+.wrap_box_bottom .title{
+    display: block;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 28px;
+}
+.fa-star-o{
+    margin-right: 3px;
+}
+.icon_select{
+    display: inline-block;
+    width: 38px;
+    height: 20px;
+    margin-right: 4px;
+    background: url(http://s2.mogucdn.com/p2/170314/133753108_5996kakhb5c3kl74gjg24c2h24l48_90x42.png) no-repeat center;
+    background-size: contain;
+    vertical-align: sub;
+}
+/* 解决高度塌陷 */

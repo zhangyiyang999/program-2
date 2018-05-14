@@ -1,0 +1,478 @@
+/* 店铺公共头部样式 */
+.shopHeader_border{
+    height: 70px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+.shop_header{
+    width: 1200px;
+    height: 70px;
+    margin: auto;
+}
+.shop_info{
+    display: block;
+    position: relative;
+    width: 507px;
+    height: 70px;
+    float: left;
+}
+.head{
+    float: left;
+    margin-left: 20px;
+}
+.head_img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-top: 15px;
+}
+.shop_name{
+    padding-left: 10px;
+    margin-top: 15px;
+    width: 240px;
+    float: left;
+}
+.shopName_top{
+    font-size: 14px;
+    overflow: hidden;
+    height: 20px;
+    line-height: 20px;
+    display: block;
+    font-weight: 400;
+}
+.shopName_top a{
+    float: left;
+    margin-right: 5px;
+    display: inline-block;
+    max-width: 130px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #333;
+    white-space: nowrap;
+    word-break: break-all;
+}
+/* 评分详细样式 */
+.shop_score{
+    position: relative;
+    width: 240px;
+    z-index: 20;
+    padding-bottom: 30px;
+}
+.s-cat{
+    color: #666;
+    margin-right: 5px;
+}
+.s-cat b{
+    color: #ef2f23;
+    font-weight: 400;
+    padding-left: 2px;
+}
+.s-cat .low{
+    color: #1aca60;
+    font-weight: 400;
+    padding-left: 2px;
+}
+.shop_action{
+    margin-top: 24px;
+    float: left;
+}
+.shop_action .collect{
+    padding: 0 12px 0 22px;
+    background-position: 4px -48px;
+    font-size: 12px;
+    color: #666;
+    height: 20px;
+    line-height: 20px;
+    margin-right: 10px;
+    background-color: #fff;
+    display: inline-block;
+    background-image: url(http://s6.mogucdn.com/pic/140917/1agxjw_ieygizjshe4wcyjvmmytambqgiyde_270x400.png);
+    background-repeat: no-repeat;
+    border: 1px solid #ddd;
+    float: left;
+}
+.shop_action .chart{
+    border: 1px solid #ddd;
+    height: 20px;
+    line-height: 20px;
+    padding: 0 5px;
+    background-color: #fff;
+    float: left;
+    display: inline-block;
+}
+.shop_action .chart .chart_btn{
+    line-height: 20px;
+    background: url(https://s10.mogucdn.com/p1/150915/upload_iezggojsgfrwinlbgmzdambqmmyde_16x17.gif) no-repeat;
+    display: inline-block;
+    padding-left: 20px;
+    float: left;
+}
+.line_right{
+    width: 1px;
+    background: #eee;
+    margin-top: 15px;
+    height: 40px;
+    margin-left: 28px;
+    float: right;
+}
+/* 店铺搜索框样式 */
+.shop_search{
+    margin: 18px 0 0;
+    padding-left: 24px;
+    /* height: 30px; */
+    float: right;
+}
+.shop_search .shopSearch_form{
+    position: relative;
+    z-index: 50;
+    float: left;
+    /* margin: 0; */
+    /* width: 571px; */
+    height: 30px;
+}
+/* .shop_search .shopSearch_form:after{
+    content: ".";
+    display: block;
+    height: 0;
+    font-size: 0;
+    clear: both;
+    visibility: hidden;
+} */
+.search_text{
+    color: #333;
+    float: left;
+    background: #fff;
+    vertical-align: middle;
+    width: 400px;
+    height: 26px;
+    overflow: hidden;
+    padding: 0 8px;
+    line-height: 26px;
+    border: 2px solid #ef2f23;
+    
+   
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+    height: 0;
+    font-size: 0;
+    visibility: hidden;
+}
+.search-inshop{
+    vertical-align: middle;
+    background-color: #fff;
+    color: #ef2f23;
+    border: 1px solid #ef2f23;
+    height: 28px;
+    width: 72px;
+    cursor: pointer;
+    display: inline;
+    line-height: 28px;
+    text-align: center;
+    float: right;
+    margin-left: 5px;
+}
+.submit-btn{
+    float: left;
+    vertical-align: middle;
+    border: 0;
+    background-color: #ef2f23;
+    color: #fff;
+    height: 30px;
+    width: 72px;
+    cursor: pointer;
+}
+/* topbanner样式 */
+.top_banner{
+    overflow: hidden;
+    height: 150px;
+    min-width: 1200px;
+}
+.top_banner .top_img{
+    background: url(https://s10.mogucdn.com/p1/160621/upload_ie4tomlcgbtdiobuhezdambqgqyde_2000x120.png) center no-repeat;
+    height: 150px;
+    display: block;
+}
+/* topNavigation样式 */
+.topNavigation_border{
+    background: rgba(0,0,0,.75);
+    position: relative;
+    z-index: 19;
+    overflow: visible;
+    margin-top:-30px; 
+    margin-bottom: 20px;
+}
+.top_navigation{
+    line-height: 30px;
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+    height: 30px;
+}
+.top_navigation ol{
+    height: 30px;
+}
+.top_navigation li{
+    float: left;
+    position: relative;
+    font-size: 14px;
+    z-index: 2;
+    padding: 7px 0;
+}
+.top_navigation li a{
+    display: block;
+    color: #fff;
+    padding: 0 20px;
+    line-height: 16px;
+    border-right: 1px solid #5c5c5c;
+}
+.top_navigation .aLi a{
+    padding: 0 38px 0 25px;
+    background: url(http://s6.mogujie.cn/pic/140415/16uz7_kqzfeqkbozbfqwkugfjeg5sckzsew_200x500.png) no-repeat 86px -191px;
+    
+}
+.top_nav2{
+    position: absolute;
+    top: 30px;
+    left: 68px;
+    width: 150px;
+    line-height: 32px;
+    background-color: rgba(0,0,0,.75);
+    display: none;
+}
+.top_nav2 dd{
+    height: 32px;
+    line-height: 32px;
+    overflow: visible;
+    position: relative;
+}
+.subMenu a{
+    color: #fff;
+    font-size: 12px;
+    background: url(http://s12.mogujie.cn/pic/130916/7ycvj_kqywuucwkfbfqqkugfjeg5sckzsew_4x7.png) no-repeat 14px 1px;
+    transition: background-color .3s;
+    border: none;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 26px;
+}
+/* 整体内容外框 */
+.commodity_border{
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.commodity_top{
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    margin: 30px 0;
+    height: 680px;
+}
+.commodityTop_left{
+    position: relative;
+    width: 1058px;
+    background: #fff;
+    z-index: 7;
+    overflow: hidden;
+    height: 680px;
+}
+/* 商品图片轮播图 */
+.commodityTopLeft_banner{
+    width: 400px;
+    height: 680px;
+    overflow: hidden;
+    float: left;
+}
+.commodityTopLeft_banner .big_img{
+    width: 400px;
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+
+}
+.commodityTopLeft_banner .big_img img{
+     width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border: none;
+    padding: 0;
+    outline: none;
+}
+.smallImgs{
+    position: relative;
+    margin-top: 10px;
+    padding: 0 32px;
+}
+.smallImgs .box{
+    width: 350px;
+    height: 59px;
+    overflow: hidden;
+    position: relative;
+}
+.smallImgs .box ul{
+    margin: 0 auto;
+    width: 9999px;
+    position: absolute;
+    left: 0px;
+}
+.smallImgs .box ul li{
+    width: 60px;
+    opacity: .5;
+    margin-right: 10px;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    float: left;
+}
+.smallImgs .box ul li img{
+    width:60px;
+}
+.smallImgs .box ul li i{
+    height: 2px;
+    width: 60px;
+    position: absolute;
+    left: 0;
+    display: none;
+    bottom: 1px;
+    border: none;
+    background: #ef2f23;
+}
+.smallImgs a{
+    background-image: url(http://s17.mogucdn.com/p1/160407/upload_ifqwkntcmi2gintdg4zdambqgyyde_221x704.png);
+    width: 12px;
+    height: 22px;
+    position: absolute;
+    top: 17px;
+}
+.smallImgs .left_btn{
+    background-position: -10px -256px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: block;
+    width: 10px;
+    height: 19px;
+    left: 0;
+}
+.smallImgs .right_btn{
+    background-position: -10px -217px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: block;
+    width: 11px;
+    height: 19px;
+    right: 0; 
+}
+/* 商品详细信息 */
+.commodityTopLeft_right{
+    width: 658px;
+    height: 530px;
+    float: left;
+}
+.commodityTopLeftRight_box{
+    padding: 0 90px 25px 31px;
+    overflow: hidden;
+    width: 537px;
+    height: 545px;
+}
+.commodity_title{
+    font-size: 24px;
+    line-height: 25px;
+    font-family: Microsoft YaHei,arial;
+    color: #333;
+    width: 100%;
+    margin-bottom: 15px;
+    font-weight:900;
+}
+.commodity_price{
+    width: 540px;
+    height: 66px;
+    border-bottom: 1px solid #f3f3f3;
+    border-top: 1px solid #f3f3f3;
+    background: url(http://s18.mogucdn.com/p1/160425/upload_ifrtonjsgm3gkmrshazdambqhayde_540x163.png) repeat-y;
+    background-position: 0 top;
+}
+.commodity_oprice{
+    min-height: 20px;
+    padding-left: 10px;
+    padding-bottom: 0px;
+    position: relative;
+}
+.property-type-origin{
+    height: 32px;
+    line-height: 32px;
+    color: #999;
+    position: absolute;
+    font-size: 12px;
+}
+.property-cont-origin{
+    padding-left: 60px;
+    font-size: 14px;
+    color: #999;
+    height: 32px;
+    line-height: 32px;
+    text-decoration: line-through;
+}
+.commodity_nprice{
+    height: 32px;
+    padding-left: 10px;
+    padding-bottom: 0px;
+    position: relative;
+}
+.property-type-now{
+    height: 32px;
+    line-height: 32px;
+    color: #999;
+    position: absolute;
+    font-size: 12px;
+}
+.property-cont-now{
+    height: 32px;
+    line-height: 32px;
+    width: 282px;
+    margin-left: -6px;  
+    padding-left: 60px;
+    color: #ef2f23;
+    font-size: 24px;
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 700;
+    float: left;
+}
+.property-extra{
+    line-height: 32px;
+    margin-right: 10px;
+    color: #999;
+    float: right;
+}
+.mr10{
+    margin-right:10px; 
+}
+.num{
+    color: #333;
+}
+
+.commodity_service{
+    margin-top: 15px;
+    height: 20px;
+    width: 527px;
+    padding-left: 10px;
+    padding-bottom: 15px;
+    position: relative;
+}
+.commodity_service dt{
+    color: #999;
+    position: absolute;
+    font-size: 12px;
+}
+.commodity_service dd{
+    padding-left: 60px;
+}
+.commodity_service dd div{
+    background: url(https://s10.mogucdn.com/p1/150915/upload_iezggojsgfrwinlbgmzdambqmmyde_16x17.gif) no-repeat;
+    display: inline-block;
+    padding-left: 20px;
+    cursor: pointer;
+}

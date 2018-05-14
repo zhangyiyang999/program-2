@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="public/css/base.css">
+    <!-- 引入重置样式 -->
+    <link rel="stylesheet" href="css/foot.css">
+    <!-- 引入底部样式 -->
+    <link rel="stylesheet" href="css/login_main.css">
+    <!-- 引入主体样式 -->
+</head>
+<body>
+<!-- 头部开始 -->
+<div class="logo_wrap">
+    <div class="logo">
+        <a title="美丽说首页" href="" class="logo_img" ></a>
+        <span class="login-logo-tip">依《网络安全法》相关要求，即日起美丽说会员登陆需绑定手机。为保障您的账户安全及正常使用，如您尚未绑定，请尽快完成绑定，感谢您的理解和支持!</span>
+    </div>
+</div>
+<!-- 主体开始 -->
+<div class="main">
+    <div class="ding">
+        <a href="" target="_blank" class="banner1"></a> 
+    </div>
+    <div class="login_box">
+        <div class="login_tab">
+            <div class="fl mod">
+                <a class="lo_mod tab_on" lo-mod="normal" href="javascript:;" title="普通登入">普通登录</a>
+            </div>
+            <div class="fl mod nopassword">
+                <a class="eb_mod" lo-mod="ebmod" href="javascript:;" title="手机免密码登入">手机无密码登录</a>
+            </div>
+        </div>
+        <div class="login_main">
+            <div id="signform" class="formbox">
+                <p class="error_tip">登录名或密码错误</p>
+                <div class="lg_form">
+                    <form method="post">
+                        <!-- 正常登录 start -->
+                        <div class="mod_box lo_mod_box" data-isshow="0">
+                            <div class="ui-sign-item ui-name-item lg_item lg_name">
+                                <input type="text" maxlength="32" class="ui-input pwd_text" data-type="username" name="uname" placeholder="用户名/邮箱/手机号" style="border-color:#CFCFCF;">
+                            </div>
+                            <div class="ui-sign-item ui-sign-common-item lg_item lg_pass">
+                                <input type="password" maxlength="32" class="ui-input pwd_text" data-type="loginpassword" name="pass" value="" placeholder="密码" style="border-color:#CFCFCF;">
+                            </div>
+                        </div>
+                        <!-- 正常登录 end -->
+                        <!-- 无密码 start -->
+                        <div class="mod_box eb_mod_box" data-isshow="0" style="display:none;">
+                            <div class="ui-sign-item ui-name-item clearfix mb">
+                                <input type="text" maxlength="32" class="ui-input pwd_text" name="tele" data-type="mobile" placeholder="手机号码" style="border-color:#CFCFCF;">
+                            </div>
+                            <!-- 动态密码输入 -->
+                            <div class="ui-sign-item ui-sign-common-item lg_item lg_code">
+                                <!-- 获取验证码按钮 -->
+                                <div class="lg_item lg_getcode">
+                                    <a href="javascript:;" class="get_tel_code" id="get_tel_code">获取动态密码</a>
+                                    <input type="text" maxlength="32" class="ui-input pwd_text width_180" name="telcode" data-type="phonecode" placeholder="动态密码" style="border-color:#CFCFCF;">
+                                </div>
+                            </div>
+                            <div class="lg_chk_item"></div>
+                        </div>
+                        <!-- 无密码 end -->
+                        <input type="hidden" class="imgcheckstate">
+                        <div id="_content"></div>
+    
+                        <input type="hidden" class="imgchecklevel">
+                        <div id="appendchk"></div>
+                        <div class="lg_login clearfix">
+                            <input type="submit" value="登录" class="sub">
+                        </div>
+                        <div class="ot_login">
+                            <div class="ot_btn clearfix">
+                                <a class="ui-ot-btn mr-42 ot_btn_qq" href="javascript:;" data-type="qq"><img src="http://s17.mogucdn.com/p2/170104/upload_5763lkilh8f7abid345gbhh167d79_19x19.png">QQ登录</a>
+                                <a class="ui-ot-btn mr-42" href="javascript:;" data-type="weixin"><img src="http://s16.mogucdn.com/p2/170104/upload_8d4dd486c18961b55lf0hbe5ebf7l_18x19.png">微信登录</a>
+                            </div>
+                        </div>
+                        <div class="lg_reg">
+                            <a class="findpwd" href="/user/findpwd">忘记密码</a>
+                        <a class="regist" href="/user/newphone">免费注册</a></div>
+                        <input type="hidden" value="" id="imgcheckvalue">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 底部开始 -->
+<div class="foot_border">
+    <div class="foot">
+        <div class="foot_top">
+            <div class="flist">
+                <h4>买家帮助</h4>
+                <div class="foot_link">
+                    <a href="" target="_blank">新手指南</a>
+                </div>
+                <div class="foot_link">
+                    <a href="" target="_blank">服务保障</a>
+                </div>
+                <div class="foot_link">
+                    <a href="" target="_blank">常见问题</a>
+                </div>
+                <div class="foot_link">
+                    <a href="" target="_blank">风险监测</a>
+                </div>
+            </div>
+            <div class="flist">
+                <h4>商家帮助</h4>
+                <div class="foot_link">
+                    <a href="" target="_blank">供货商招募</a>
+                </div>
+                <div class="foot_link">
+                    <a href="" target="_blank">商家后台</a>
+                </div>
+            </div>
+            <div class="flist">
+                <h4>关于我们</h4>
+                <div class="foot_link">
+                    <a href="" target="_blank">关于美丽说</a>
+                </div>
+                <div class="foot_link">
+                    <a href="" target="_blank">联系我们</a>
+                </div>
+            </div>
+            <div class="flist aboutus">
+                <h4>关注我们</h4>
+                <div class="foot_link">
+                    <a href="" target="_blank"><span class="footer_icon_sina"></span>新浪微博</a>
+                </div>
+                <div class="foot_link">
+                    <a href="" target="_blank"><span class="footer_icon_qzone"></span>QQ空间</a>
+                </div>
+                <div class="foot_link">
+                    <a href="" target="_blank"><span class="footer_icon_tencent"></span>腾讯微博</a>
+                </div>
+            </div>
+            <div class="flist service">
+                <h4>美丽说微信服务号</h4>
+                <img class="qrcode" src="https://s10.mogucdn.com/mlcdn/c45406/170612_54f23kd09hehlc8je4fdbf2ef6f6c_100x100.jpg" alt="美丽说服务号二维码">
+            </div>
+            <div class="flist last">
+                <h4>美丽说客户端下载</h4>
+                <img class="qrcode" src="https://s10.mogucdn.com/p2/160802/7e_74j23d2a5f5j3bj31h70375gbeec1_100x100.png">
+            </div>
+        </div>
+        <div class="foot_bottom"> 
+            Copyright ©2017 Meilishuo.com &nbsp;
+            <a href="https://s10.mogucdn.com/new1/v1/bmisc/518ea1bbd36948b90e658485d2700e62/181714310539.pdf">电信与信息服务业务经营许可证100798号</a>&nbsp;
+            <a href="https://s10.mogucdn.com/p1/160811/idid_ifrtszjqmmzdazrumezdambqhayde_2436x3500.jpg">经营性网站备案信息</a>&nbsp;
+            <br> 京ICP备11031139号&nbsp; 京公网安备110108006045&nbsp;&nbsp; 客服电话：4000-800-577&nbsp; 文明办网文明上网举报电话：010-82615762 &nbsp;
+            <a href="http://net.china.com.cn/index.htm">违法不良信息举报中心</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
