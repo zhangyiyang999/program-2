@@ -1033,3 +1033,407 @@
     margin: 0 auto;
     display: block;
 }
+/* 分类模块样式 */
+.commodityContent_classify{
+    margin-top: 20px;
+    border: 1px solid #e5e5e5;
+    width: 198px;
+    height: 311px;
+}
+.commodityContentClassify_hd{
+    height: 38px;
+    background: #f6f6f6;
+    line-height: 38px;
+    text-align: center;
+    color: #333;
+    font-size: 16px;
+    font-family: Microsoft YaHei\,arial;
+}
+.commodityContentClassify_bd{
+    border-top: 1px solid #e5e5e5;
+    overflow: hidden;
+}
+.commodityContentClassify_bd .classify-list{
+    margin: 20px 0 20px 20px;
+}
+.commodityContentClassify_bd .classify-list li{
+    line-height: 14px;
+    margin: -1px 0 16px;
+}
+.commodityContentClassify_bd .classify-list li a{
+    display: inline-block;
+    width: 155px;
+    height: 14px;
+    line-height: 14px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding-left: 11px;
+    color: #666;
+    background: url(http://s16.mogucdn.com/p1/150924/upload_ieytmmbvgy3tsndegmzdambqmeyde_32x300.png) no-repeat 0 -117px;
+}
+/* 看了又看模块样式 */
+.commodityContent_look{
+    margin-top: 20px;
+    border: 1px solid #e5e5e5;  
+}
+.commodityContentLook-hd{
+    height: 38px;
+    background: #f6f6f6;
+    line-height: 38px;
+    text-align: center;
+    color: #333;
+    font-size: 16px;
+    font-family: Microsoft YaHei\,arial;
+}
+.commodityContent_look .repeat-list{
+    margin-top: 20px;
+}
+.commodityContent_look .repeat-list li{
+    overflow: hidden;
+    width: 160px;
+    margin: 0 auto 30px;
+}
+.commodityContent_look .repeat-list li .pic{
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    height: 240px;
+}
+.commodityContent_look .repeat-list li .pic img{
+    display: block;
+    width: 100%;
+}
+.commodityContent_look .repeat-list li .title {
+    display: block;
+    height: 14px;
+    line-height: 14px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-top: 10px;
+    color: #333;
+    font-size: 14px;
+}
+.commodityContent_look .repeat-list li .info {
+    overflow: hidden;
+    margin-top: 10px;
+}
+.commodityContent_look .repeat-list li .price {
+    float: left;
+    height: 14px;
+    font-size: 0;
+}
+.commodityContent_look .repeat-list li .price .price-u {
+    font-family: Microsoft YaHei\,arial;
+    font-style: normal;
+}
+.commodityContent_look .repeat-list li .price .price-n {
+    margin-left: 3px;
+    font-family: Microsoft YaHei\,arial;
+}
+.commodityContent_look .repeat-list li .price .price-n, .commodityContent_look .repeat-list li .price .price-u {
+    display: inline-block;
+    line-height: 14px;
+    color: #333;
+    font-size: 14px;
+}
+.commodityContent_look .repeat-list li .fav {
+    float: left;
+    height: 12px;
+    margin-left: 20px;
+    font-size: 0;
+}
+.commodityContent_look .repeat-list li .fav .fav-i {
+    display: inline-block;
+    width: 13px;
+    height: 12px;
+    background: url(http://s16.mogucdn.com/p1/150924/upload_ieytmmbvgy3tsndegmzdambqmeyde_32x300.png) no-repeat 0 -200px;
+}
+.commodityContent_look .repeat-list li .fav .fav-n {
+    margin-left: 3px;
+    color: #999;
+    font-size: 12px;
+    font-family: Microsoft YaHei\,arial;
+}
+.commodityContent_look .repeat-list li .fav .fav-i, .commodityContent_look .repeat-list li .fav .fav-n {
+    display: inline-block;
+    line-height: 12px;
+}
+/* 主体模块样式 */
+.commodityContent_middle{
+    width: 738px;
+    margin-left: 220px;
+    border: 1px solid #e5e5e5;
+}
+.commodityContentMiddle_top{
+    height: 58px;
+    border-bottom: 1px solid #e5e5e5;
+    background: #f6f6f6;
+    z-index: 1001;
+    width: 738px;
+}
+/* .commodityContentMiddle_top ul{
+    content: "";
+    display: table;
+    clear: both;
+    
+} */
+.commodityContentMiddle_top ul li{
+    float: left;
+    width: 149px;
+    height: 58px;
+    border-right: 1px solid #e5e5e5;
+    font-size: 0;
+}
+.commodityContentMiddle_top ul li.selected a{
+    border-top: 4px solid #ef2f23;
+    border-bottom: 1px solid #fff;
+    background: #fff;
+}
+
+.commodityContentMiddle_top ul li a{
+    display: block;
+    border-top: 4px solid #f6f6f6;
+    line-height: 54px;
+    font-family: Microsoft YaHei\,arial;
+    font-size: 16px;
+    color: #333;
+    text-align: center;
+}
+.commodityContentMiddle_top ul li em {
+    display: inline-block;
+    line-height: 12px;
+    margin-left: 4px;
+    font-family: Microsoft YaHei\,arial;
+    font-style: normal;
+    font-size: 12px;
+    color: #999;
+}
+.commodityContentMiddle_top ul li.qrcode {
+    position: relative;
+    width: 140px;
+    float: right;
+    margin-right: 20px;
+    border-right-width: 0;
+}
+.commodityContentMiddle_top ul li.qrcode .qrcode-togger{
+    width: 100px;
+    line-height: 16px;
+    margin-top: 24px;
+    font-family: Microsoft YaHei\,arial;
+    font-size: 12px;
+    color: #666;
+    text-align: right;
+}
+.commodityContentMiddle_top ul li.qrcode .qrcode-pic{
+    display: none;
+    width: 172px;
+    height: 172px;
+    position: absolute;
+    z-index: 1001;
+    top: 58px;
+    right: -21px;
+    border: 1px solid #ddd;
+    padding: 13px;
+    background: #fff url(http://s7.mogucdn.com/pic/140813/2r6z_ieygeylemy4tonlbmiytambqhayde_46x46.gif) no-repeat 50%;
+}
+.commodityContentMiddle_top ul li.qrcode .qrcode-pic img{
+    width: 172px;
+    height: 172px;
+    display: block;
+}
+.commodityContentMiddle_top ul li.qrcode .qrcode-mini {
+    position: absolute;
+    top: 20px;
+    right: 15px;
+    width: 20px;
+    height: 20px;
+    background: url(http://s16.mogucdn.com/p1/150924/upload_ieytmmbvgy3tsndegmzdambqmeyde_32x300.png) no-repeat 0 0;
+}
+.commodityContentMiddle_top ul li.qrcode .qrcode-arrow {
+    position: absolute;
+    top: 28px;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 5px solid #bbb;
+    border-bottom-width: 0;
+}
+/* 中部隐藏样式 */
+.top_hidden{
+    overflow: hidden;
+    z-index: 1000;
+    width: 1198px;
+    left: 50%;
+    margin-left: -600px;
+    border-right: 1px solid #e5e5e5;
+    border-left: 1px solid #e5e5e5;
+    height: 58px;
+    border-bottom: 1px solid #e5e5e5;
+    background: #f6f6f6;
+    display: none;
+}
+
+/* 商品描述 */
+.commodity_describe{
+    /* width: 700px;
+    height: 153px; */
+    padding-left: 19px;
+    padding-right: 19px;
+}
+.commodityContentMiddle_main h1{
+    /* overflow: hidden; */
+    padding: 40px 0 2px;
+    margin-bottom: 20px;
+    width: 72px;    
+    /* float: left; */
+    line-height: 18px;
+    border-bottom: 1px solid #333;
+    color: #333;
+    font-size: 18px;
+    font-family: Microsoft YaHei\,arial;
+    font-weight: bold;
+}
+.commodityDescribe_text{
+    line-height: 18px;
+    margin: -2px 0 18px;
+    color: #666;
+    font-size: 14px;
+    font-family: Microsoft YaHei\,arial;
+}
+/* 产品参数 */
+.commodity_parameter{
+    padding-left: 19px;
+    padding-right: 19px;
+}
+.parameter-table{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.parameter-table  td{
+    width: 33%;
+    height: 34px;
+    border: 1px solid #eee;
+    padding: 0 0 0 10px;
+    color: #666;
+    font-size: 12px;
+}
+/* 穿着效果 */
+.commodity_effect{
+    padding-left: 19px;
+    padding-right: 19px;
+}
+.commodity_effect img{
+    width:100%;
+}
+/* 尺码说明 */
+.commodity_size{
+    padding-left: 19px;
+    padding-right: 19px;
+}
+.size-table{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.size-table thread tr{
+    height: 32px;
+    background: #f2f2f2;
+}
+.size-table tbody tr{
+    height: 32px;
+}
+.size-table tbody td {
+    border-bottom: 1px solid #f2f2f2;
+    color: #666;
+}
+
+.size-table td {
+    text-align: center;
+}
+.size-text{
+    line-height: 16px;
+    margin: -2px 0 18px;
+    color: #999;
+    font-size: 12px;
+    font-family: Microsoft YaHei\,arial;
+}
+/* 扩展栏样式 */
+.commodityContent_right{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 240px;
+    /* background:red; */
+    height: 100%;
+    box-sizing:border-box; 
+    border-right: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+/* 购物车模块 */
+.commodityContent_right .cart-hd{
+    z-index: 1002;
+    width: 238px;
+    height: 58px;
+    line-height: 58px;
+    background: #fff;
+    text-align: center;
+}
+.commodityContent_right .cart-hd .cart-name{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.commodityContent_right .cart-hd .cart-name span {
+    display: inline-block;
+    position: relative;
+    line-height: 20px;
+    padding-left: 29px;
+    color: #333;
+    font-size: 20px;
+}
+.commodityContent_right .cart-hd .cart-name span i{
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 23px;
+    height: 18px;
+    background: url(http://s16.mogucdn.com/p1/150924/upload_ieytmmbvgy3tsndegmzdambqmeyde_32x300.png) no-repeat 0 -40px;
+}
+/* 侧导航栏 */
+.commodityContent_right .extranav-bd{
+    overflow: hidden;
+    top: 59px;
+}
+.commodityContent_right .extranav-bd .extranav-list{
+    width: 204px;
+    margin: 15px 18px 0;
+}
+.commodityContent_right .extranav-bd .extranav-list li.selected, .commodityContent_right .extranav-bd .extranav-list li:hover {
+    background: url(http://s18.mogucdn.com/p1/150914/upload_ie2wgnrtmy4tim3bgmzdambqhayde_204x30.png) no-repeat;
+}
+.commodityContent_right .extranav-bd .extranav-list li {
+    height: 30px;
+    line-height: 30px;
+    margin: 7px 0;
+    cursor: pointer;
+}
+.commodityContent_right .extranav-bd .extranav-list li.selected a, .commodityContent_right .extranav-bd .extranav-list li:hover a {
+    color: #333;
+    font-weight: 700;
+    background-position: 0 -238px;
+}
+
+.commodityContent_right .extranav-bd .extranav-list li a {
+    display: inline-block;
+    line-height: 14px;
+    padding-left: 16px;
+    margin-left: 57px;
+    color: #666;
+    font-size: 14px;
+    font-family: Microsoft YaHei\,arial;
+    background: url(http://s16.mogucdn.com/p1/150924/upload_ieytmmbvgy3tsndegmzdambqmeyde_32x300.png) no-repeat 0 -158px;
+}
