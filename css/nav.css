@@ -9,6 +9,11 @@
 .header{
     width: 1200px;
     margin: 0 auto;
+    height: 32px;
+}
+.header>ul{
+    float: right;
+    
 }
 .header>ul>li{
     float: left;
@@ -26,9 +31,12 @@
     text-decoration: none;
 }
 /* 头部特殊样式 */
-.header ul .go_home a{
+.header .go_home a{
     margin-right: 200px;
     border: 0;
+}
+.header .go_home{
+    float: left;
 }
 .header ul li .last{
     border: 0;

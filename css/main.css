@@ -37,13 +37,13 @@
 }
 /* 主体瀑布流样式 */
 .main_wrap{
-    position: relative;
     width: 1200px;
     margin:  0 auto;
-    height: 424px;
 }
 .wrap_box{
-    position: absolute;
+    float: left;
+    margin-right:15px; 
+    margin-top: 10px;
 }
 .wrap_box .pic_box{
     width: 224px;
@@ -54,6 +54,10 @@
     background-image: url(../img/wrap1.jpg);
     background-size: cover;
 
+}
+.wrap_box .pic_box img{
+    width: 224px;
+    height: 340px;
 }
 .wrap_box_bottom{
     width:224px;
@@ -99,3 +103,12 @@
     vertical-align: sub;
 }
 /* 解决高度塌陷 */
+.main_wrap:after{
+    content: "";
+    display: block;
+    height: 0;
+    font-size: 0;
+    clear: both;
+    visibility: hidden;
+}
+
