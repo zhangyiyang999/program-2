@@ -102,10 +102,11 @@
 .pwd_text {
     height: 40px;
     width: 300px;
+    border-color:#CFCFCF;
 }
 
 .pwd_text, .short_text {
-    background: none!important;
+    background: none;
     border: 1px solid #ccc;
     padding: 0 6px;
 }

@@ -286,12 +286,44 @@
     overflow: hidden;
     float: left;
 }
+.commodityTop_left .large_img{
+    width: 500px;
+    height: 500px;
+	position: absolute;
+	left: 400px;
+	border:1px solid #f10;
+	display: none;
+    overflow: hidden;
+    z-index: 999;
+}
+.commodityTop_left .large_img img{
+    position: absolute;
+}
 .commodityTopLeft_banner .big_img{
     width: 400px;
     height: 600px;
     overflow: hidden;
     position: relative;
 
+}
+.commodityTopLeft_banner .big_img .bigImg_wrap{
+    width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 999;
+
+}
+.commodityTopLeft_banner .big_img .bigImg_garybox{
+	display: none;
+	width: 100px;
+	height: 100px;
+	background-image: url(http://s3.mogucdn.com/mlcdn/c45406/171108_1450ijh6i4k35kih22jlb195he027_640x960.jpg_468x468.jpg);
+	background-size:400px 600px;
+	background-position: 0 0;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+	position: absolute;
+	left: 0;
+	top: 0;
 }
 .commodityTopLeft_banner .big_img img{
      width: 100%;
@@ -648,7 +680,7 @@
     color: #ef2f23;
     padding-left: 22px;
     float: left;
-    /* display: none; */
+    display: none;
 }
 /* 商品购买样式 */
 .commodity_buy{

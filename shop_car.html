@@ -108,54 +108,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr class="cart_mitem " data-cut="true" data-isless="false" data-bid="14v9q" data-sellerid="12x92a0" data-stockid="1ssm984"
-                                data-tradeitemid="1kg2t9w" data-ptps="1.zfrD1b.preferitem_mls.1.FAg1FQe" data-ptp="_shoppingcart" data-price="2000">
-                                <td class="vm ">
-                                    <input type="checkbox" class="cart_thcheck" data-stockid="1ssm984"> </td>
-                                <td class="cart_table_goods_wrap">
-                                    <!-- 商品 -->
-                                    <a href="http://item.meilishuo.com/detail/1kg2t9w" target="_blank" class="cart_goods_img">
-                                        <img class="cartImgTip" src="http://s3.mogucdn.com/mlcdn/c45406/170723_255400c0fd5fi3df7c1h5495e4g5a_750x750.jpg_100x100.jpg"
-                                            width="78" height="78" alt="夏季新品新款女装百搭修身v领性感无袖针织打底衫吊带小背心"> </a>
-                                    <!-- 商品title -->
-                                    <a href="http://item.meilishuo.com/detail/1kg2t9w?ptpfrom=1.zfrD1b.preferitem_mls.1.FAg1FQe" target="_blank"
-                                        class="cart_goods_t cart_hoverline" title="夏季新品新款女装百搭修身v领性感无袖针织打底衫吊带小背心"> 夏季新品新款女装百搭修身v领性感无袖针织打底衫吊带小背心 </a>
-                                    <!-- 321活动提醒 <div class="event_tip_wrap"> <p class="event_tips"> <b><img src="" alt=""></b><span class="e_price">321活动提醒</span> </p> </div>-->
-                                    <!-- 321活动提醒 end -->
-                                   
-                                </td>
-                                <td>
-                                    <p class="cart_lh20">颜色：黑色</p>
-                                    <p class="cart_lh20">尺码：均码</p>
-                                </td>
-                                <td class="cart_alcenter">
-                                    <!-- 单价 -->
-                                    <p class="cart_lh20 cart_throughline cart_lightgray">20.00</p>
-                                    <p class="cart_lh20 cart_bold cart_data_sprice" data-price="14.00"> 14.00 </p>
-                                    <p>
-                                        <span class="cart_tip_yellow cart_tip_focuswidth">限量促销</span>
-                                    </p>
-                                </td>
-                                <td class="cart_alcenter">
-                                    <!-- 数量 -->
-                                    <div>
-                                        <div class="cart_num cart_counter" data-stockid="1ssm984" data-stocknum="1386" data-timestamp=""
-                                            data-ptp="1.zfrD1b.preferitem_mls.1.FAg1FQe">
-                                            <input type="text" class="cart_num_input cart_bold" maxlength="3" value="1">
-                                            <span class="cart_num_add"></span>
-                                            <span class="cart_num_reduce disable"></span>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td class="cart_alcenter">
-                                    <!-- 小计 -->
-                                    <p class="cart_deep_red cart_font16 item_sum" data-unit="14" data-price="14.00">14.00</p>
-                                </td>
-                                <td class="cart_alcenter">
-                                    <!-- 操作 -->
-                                    <a href="javascript:;" class="cart_hoverline delete">删除</a>
-                                </td>
-                            </tr>
+                                
                         </tbody>
                     </table>
                     <!-- 表格 end -->
@@ -175,4 +128,10 @@
         </div>
     </div>
 </body>
+<script src="public/js/require.js"></script>
+<script>
+    require(["./public/js/require.config"],function(){
+        require(["shopCar"]);
+    });
+</script>
 </html>

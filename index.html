@@ -247,7 +247,11 @@
 <script src="public/js/require.js"></script>
 <script>
     require(["./public/js/require.config"],function(){
-        require(["index"])
+        require(["index"]);
+        require(["nav"],function(nav){
+            new nav(".header");
+            new nav(".nav_ce");
+        });
     })
 </script>
 </html>

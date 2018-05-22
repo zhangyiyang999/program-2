@@ -15,6 +15,8 @@ define(["jquery"], function() {
                 //回调结果;
                 //console.log(res.data.list);
                 this.json = res.data.list;
+                this.page = res.data.nextPage -1;
+                
                 this.render_page();
                 this.sort_item();
             }.bind(this))
@@ -51,13 +53,14 @@ define(["jquery"], function() {
                                                 <i class="fa fa-star-o"></i>${item.itemSale}
                                             </div>
                                         </div>
-                                        <a class="title" href="" ><i class="icon_select"></i>${item.title}</a>
+                                        <a class="title" data-id=${item.itemLikes} data-page=${this.page} href="http://localhost/meilishuo/commodity_details.html" ><i class="icon_select"></i>${item.title}</a>
                                     </div>
                                 </div>`
             }.bind(this))
             this.html += "</ul>";
             // console.log(this.html);
             this.main_ele.html(this.main_ele.html() + this.html);
+            
         },
         
         load_err(){
@@ -83,6 +86,9 @@ define(["jquery"], function() {
                 this.render_page();
                 this.loading_msg = false;
             }.bind(this))
+            
+        },
+        bangding(){
             
         }
     }

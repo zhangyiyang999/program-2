@@ -134,9 +134,14 @@
     <div class="commodity_border">
         <div class="commodity_top">
             <div class="commodityTop_left">
+                <div class="large_img">
+                    <img src="http://s3.mogucdn.com/mlcdn/c45406/171108_1450ijh6i4k35kih22jlb195he027_640x960.jpg_468x468.jpg" alt="">
+                </div>
                 <div class="commodityTopLeft_banner">
                     <div class="big_img">
-                        <img src="http://s3.mogucdn.com/mlcdn/c45406/171108_1450ijh6i4k35kih22jlb195he027_640x960.jpg_468x468.jpg"/>
+                        <div class="bigImg_wrap"></div>
+                        <img src="http://s3.mogucdn.com/mlcdn/c45406/171108_1450ijh6i4k35kih22jlb195he027_640x960.jpg_468x468.jpg" class="opacity-img"/>
+                        <div class="bigImg_garybox"></div>
                     </div>
                     <div class="smallImgs">
                         <div class="box">
@@ -224,7 +229,7 @@
                                     <input class="commodityNum-input" type="text" value="1">
                                     <span class="commodityNum-add "></span>
                                 </div>
-                                <div class="goods-stock">库存921件</div>
+                                <div class="goods-stock">库存<a></a>件</div>
                                 <div class="goods-stock-tip" >您所填写的商品数量超过库存！</div>
                             </dd>
                         </dl>
@@ -682,4 +687,18 @@
         </div>
     </div>
 </body>
+<script src="public/js/require.js"></script>
+<script>
+    require(["./public/js/require.config"],function(){
+        require(["details"])
+        require(["fangdajing"],function(fangdajing){
+           new fangdajing({
+                small_ele:".big_img",
+                focus_ele:".bigImg_garybox",
+                big_ele:".large_img"
+            });
+
+        })
+    })
+</script>
 </html>
