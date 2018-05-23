@@ -255,7 +255,7 @@ table{
 }
 .cart_num .disable {
     opacity: .5;
-    filter: alpha(opacity=50);
+    background: #666;
     cursor: not-allowed;
 }
 

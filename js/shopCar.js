@@ -38,7 +38,7 @@ define([
                                 <p class="cart_lh20">颜色：黑色</p>
                                 <p class="cart_lh20">尺码：均码</p>
                             </td>
-                            <td class="cart_alcenter">
+                            <td class="cart_alcenter ">
                                 <!-- 单价 -->
                                 <p class="cart_lh20 cart_throughline cart_lightgray">${item1.price}</p>
                                 <p class="cart_lh20 cart_bold cart_data_sprice" >${item1.discountPrice}</p>
@@ -51,14 +51,14 @@ define([
                                 <div>
                                     <div class="cart_num cart_counter" >
                                         <input type="text" class="cart_num_input cart_bold" maxlength="3" value="${item.num}">
-                                        <span class="cart_num_add"></span>
-                                        <span class="cart_num_reduce disable"></span>
+                                        <span class="cart_num_add">+</span>
+                                        <span class="cart_num_reduce disable">-</span>
                                     </div>
                                 </div>
                             </td>
-                            <td class="cart_alcenter">
+                            <td class="cart_alcenter xiaoji">
                                 <!-- 小计 -->
-                                <p class="cart_deep_red cart_font16 item_sum">${item.num*item1.discountPrice}.00</p>
+                                <p class="cart_deep_red cart_font16 item_sum">${parseFloat(Number(item.num*item1.discountPrice).toFixed(2))}</p>
                             </td>
 
                             <td class="cart_alcenter">
@@ -72,12 +72,21 @@ define([
             }) 
                 $(".s_all").click(function() { 
                     
-                    if (this.checked == true) {   
-                    $(".cart_thcheck").each(function() { 
-                        console.log( $(".cart_thcheck"));  
-                        this.checked = true;   
-                    }); 
-                }
+                    if (this.checked == true) {
+                        var price = 0 ;  
+                        $(".cart_thcheck").each(function() { 
+                            this.checked = true;   
+                            // console.log($(this).parent().siblings(".xiaoji"));1
+                            price += Number($(this).parent().siblings(".xiaoji").find(".item_sum").html());
+                            console.log($(this).parent().siblings(".xiaoji").find(".item_sum").html());
+                        }); 
+                        $(".cart_paybar_info_cost").html(price);
+                    }else{
+                        $(".cart_thcheck").each(function() { 
+                            this.checked = false;   
+                        }); 
+                        $(".cart_paybar_info_cost").html("0.00");
+                    }
             })
         })
     })

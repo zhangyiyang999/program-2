@@ -33,7 +33,7 @@
                         <li><a href="">收藏店铺</a></li>
                     </ul>
                 </li>
-                <li class="drop drop_car"><a><i class="car"></i>我的购物车</a></li>
+                <li class="drop drop_car"><ahref="http://localhost/meilishuo/program-2/shop_car.html"><i class="car"></i>我的购物车</a></li>
                 <li><a><i class="order"></i>我的订单</a></li>
                 <li>
                     <a>帮助中心<i class="down"></i></a>
@@ -132,6 +132,9 @@
 <script>
     require(["./public/js/require.config"],function(){
         require(["shopCar"]);
+        require(["nav"],function(nav){
+            new nav(".header");
+        });
     });
 </script>
 </html>

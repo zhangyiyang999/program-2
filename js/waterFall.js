@@ -53,7 +53,7 @@ define(["jquery"], function() {
                                                 <i class="fa fa-star-o"></i>${item.itemSale}
                                             </div>
                                         </div>
-                                        <a class="title" data-id=${item.itemLikes} data-page=${this.page} href="http://localhost/meilishuo/commodity_details.html" ><i class="icon_select"></i>${item.title}</a>
+                                        <a class="title" data-id=${item.itemLikes} data-page=${this.page} href="http://localhost/meilishuo/program-2/commodity_details.html" ><i class="icon_select"></i>${item.title}</a>
                                     </div>
                                 </div>`
             }.bind(this))
