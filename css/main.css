@@ -8,15 +8,11 @@
     overflow: hidden;
     background: red;
 }
-.banner ul{
-    width: 100%;
-    z-index: 0;
-}
-.banner ul li {
+.banner div {
     width: 100%;
     position: absolute;
 }
-.banner ul li a img{
+.banner div a img{
     display: block;
     height: 400px;
     overflow: hidden;

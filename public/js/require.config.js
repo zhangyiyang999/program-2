@@ -9,6 +9,7 @@ requirejs.config({
         "login":"js/login",
         "register":"js/register",
         "fangdajing":"js/fangdajing",
-        "nav":"js/nav"
+        "nav":"js/nav",
+        "banner": "public/js/swiper-4.2.6.min"
     }
 })

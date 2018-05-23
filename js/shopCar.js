@@ -58,7 +58,7 @@ define([
                             </td>
                             <td class="cart_alcenter xiaoji">
                                 <!-- 小计 -->
-                                <p class="cart_deep_red cart_font16 item_sum">${parseFloat(Number(item.num*item1.discountPrice).toFixed(2))}</p>
+                                <p class="cart_deep_red cart_font16 item_sum" data-id="${item1.discountPrice}">${parseFloat(Number(item.num*item1.discountPrice).toFixed(2))}</p>
                             </td>
 
                             <td class="cart_alcenter">
@@ -70,23 +70,74 @@ define([
                 }
                
             }) 
-                $(".s_all").click(function() { 
-                    
-                    if (this.checked == true) {
-                        var price = 0 ;  
-                        $(".cart_thcheck").each(function() { 
-                            this.checked = true;   
-                            // console.log($(this).parent().siblings(".xiaoji"));1
-                            price += Number($(this).parent().siblings(".xiaoji").find(".item_sum").html());
-                            console.log($(this).parent().siblings(".xiaoji").find(".item_sum").html());
-                        }); 
-                        $(".cart_paybar_info_cost").html(price);
-                    }else{
-                        $(".cart_thcheck").each(function() { 
-                            this.checked = false;   
-                        }); 
-                        $(".cart_paybar_info_cost").html("0.00");
+            // 全选功能
+            $(".s_all").click(function() { 
+                if (this.checked == true) {
+                    var price = 0 ;  
+                    $(".s_all_slave")[0].checked = true;
+                    $(".cart_thcheck").each(function() { 
+                        this.checked = true;   
+                        // console.log($(this).parent().siblings(".xiaoji"));1
+                        price += Number($(this).parent().siblings(".xiaoji").find(".item_sum").html());
+                    }); 
+                    $(".cart_paybar_info_cost").html(price);
+                }else{
+                    $(".s_all_slave")[0].checked = false;
+                    $(".cart_thcheck").each(function() { 
+                        this.checked = false;   
+                    }); 
+                    $(".cart_paybar_info_cost").html("0.00");
+                }
+            })
+            $(".s_all_slave").click(function () {
+                if (this.checked == true) {
+                    var price = 0;
+                    $(".s_all")[0].checked = true;
+                    $(".cart_thcheck").each(function () {
+                        this.checked = true;
+                        // console.log($(this).parent().siblings(".xiaoji"));1
+                        price += Number($(this).parent().siblings(".xiaoji").find(".item_sum").html());
+                    });
+                    $(".cart_paybar_info_cost").html(price);
+                } else {
+                    $(".s_all")[0].checked = false;
+                    $(".cart_thcheck").each(function () {
+                        this.checked = false;
+                    });
+                    $(".cart_paybar_info_cost").html("0.00");
+                }
+            })
+            $.each($(".cart_num_add"),function(index,item){   
+                $(item).on("click",function() {
+                    $(this).siblings(".cart_num_input")
+                           .val(Number($(this).siblings(".cart_num_input").val()) + 1);
+                    var danjia = Number($(this).parent().parent().parent().siblings().siblings(".xiaoji").find(".item_sum").attr("data-id"))
+                    $(this).parent().parent().parent().siblings(".xiaoji").find(".item_sum").html(parseFloat(danjia * (Number($(this).siblings(".cart_num_input").val()))).toFixed(2));
+                })
+            })
+            $.each($(".cart_num_reduce"), function (index,item) {
+                $(item).on("click", function () {
+                    if ($(this).siblings(".cart_num_input").val() <= 0){
+                        return 0 ;
                     }
+                    $(this).siblings(".cart_num_input")
+                        .val(Number($(this).siblings(".cart_num_input").val()) - 1);
+                    var danjia = Number($(this).parent().parent().parent().siblings().siblings(".xiaoji").find(".item_sum").attr("data-id"))
+                    $(this).parent().parent().parent().siblings(".xiaoji").find(".item_sum").html(parseFloat(danjia * (Number($(this).siblings(".cart_num_input").val()))).toFixed(2));
+                })
+            })
+            $.each($(".cart_thcheck"),function(index,item){
+                $(item).on("click", function () {
+                    if (this.checked === false) {
+                        var zhongjia = Number($(".cart_paybar_info_cost").html());
+                        var xiaoji = Number($(this).parent().siblings(".xiaoji").find(".item_sum").html());
+                        $(".cart_paybar_info_cost").html(zhongjia+xiaoji);
+                    } else if (this.checked === true){
+                        var zhongjia = Number($(".cart_paybar_info_cost").html());
+                        var xiaoji = Number($(this).parent().siblings(".xiaoji").find(".item_sum").html());
+                        $(".cart_paybar_info_cost").html(zhongjia - xiaoji);
+                    }
+                })
             })
         })
     })
