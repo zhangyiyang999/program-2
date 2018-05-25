@@ -148,6 +148,12 @@ define([
           },function(){
             $(".commodityContentMiddle_top ul li.qrcode .qrcode-pic").hide();
           })
+          $.each($(".extranav-list>li"),function(index,item){
+            $(this).on("click",function(){
+                $(this).addClass("selected")
+                        .siblings("li").removeClass("selected")
+            })
+          })
     })
     
 });

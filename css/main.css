@@ -10,9 +10,9 @@
 }
 .banner div {
     width: 100%;
-    position: absolute;
+    
 }
-.banner div a img{
+.banner div div a img{
     display: block;
     height: 400px;
     overflow: hidden;

@@ -17,6 +17,8 @@
     <!-- 引入底部样式 -->
     <link rel="stylesheet" href="css/nav_ce.css">
     <!-- 引入侧导航栏样式 -->
+    <link rel="stylesheet" href="public/css/swiper-4.2.6.min.css">    
+    <!-- 引入swiper样式 -->
    
 </head>
 <body>
@@ -24,11 +26,11 @@
     <div class="header_border">
         <div class="header">
             <ul>
-                <li class="go_home"><a><i class="home"></i>美丽说首页</a></li>
+                <li class="go_home"><a href="http://localhost/meilishuo/program-2/index.html"><i class="home"></i>美丽说首页</a></li>
                 <li><a><i class="weixin"></i>微信登录</a></li>
                 <li><a><i class="qq"></i>QQ登录</a></li>
-                <li><a>登录</a></li>
-                <li><a>注册</a></li>
+                <li><a href="http://localhost/meilishuo/program-2/login.html">登录</a></li>
+                <li><a href="http://localhost/meilishuo/program-2/register.html">注册</a></li>
                 <li class="drop">
                     <a><i class="collect"></i>我的收藏</a>
                     <ul class="ul_down">
@@ -122,21 +124,29 @@
     <!-- 轮播图开始 -->
     <div class="banner">
         <div class="swiper-wrapper">
-
-            <div>
+            <div class="swiper-slide">
                 <a href=""><img src="img/banner1.jpg"/></a>
-            </div>
-            <div>
+            </div >
+            <div class="swiper-slide">
                 <a href="">
                     <img src="img/banner1.jpg" />
                 </a>
             </div>
-        </div>      
-        <!-- Add Pagination -->
-        <div class="swiper-pagination swiper-pagination-white"></div>
+            <div class="swiper-slide">
+                <a href="">
+                    <img src="img/banner1.jpg" />
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="">
+                    <img src="img/banner1.jpg" />
+                </a>
+            </div>
+        </div>
+        <div class="swiper-scrollbar"></div>
         <!-- Add Arrows -->
-        <div class="swiper-button-next swiper-button-white"></div>
-        <div class="swiper-button-prev swiper-button-white"></div>
+        <div class="swiper-button-next swiper-button-white" style="position: absolute;right: 0;width: 40px;"></div>
+        <div class="swiper-button-prev swiper-button-white"style="position: absolute;left: 0;width: 40px;"></div>
 
 
     </div>
@@ -226,7 +236,7 @@
                 </div> 
             </div> 
             <div class="ce-cart sidebar-btn">
-                <a href="//cart.meilishuo.com/mls/cart/mycart" target="_blank" class="sidebar-link">
+                <a href="http://localhost/meilishuo/program-2/shop_car.html" target="_blank" class="sidebar-link">
                     <span class="cart-num ce-cart-num sidebar-num"></span>
                     购物车
                 </a>
@@ -261,18 +271,21 @@
 <script>
     require(["./public/js/require.config"],function(){
         require(["index"]);
+        require(["goTop"]);
         require(["nav"],function(nav){
             new nav(".header");
             new nav(".nav_ce");
         });
          require(["banner"], function (Swiper) {
               new Swiper('.banner', {
-                 spaceBetween: 30,
-                 effect: 'fade',
-                 pagination: {
-                     el: '.swiper-pagination',
-                     clickable: true,
-                 },
+                slidesPerView: 1,
+                loop:true,
+                autoplay:true,
+                
+                scrollbar: {
+                el: '.swiper-scrollbar',
+                hide: true,
+                },
                  navigation: {
                      nextEl: '.swiper-button-next',
                      prevEl: '.swiper-button-prev',

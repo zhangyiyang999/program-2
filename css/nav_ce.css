@@ -46,20 +46,35 @@
     position: relative;
     padding-top: 41px;
 } 
+.ce_options .ce-download:hover{
+    color: #fff;
+    background: url(http://s17.mogucdn.com/p1/160926/idid_ifqtsojugaywgyztmizdambqgyyde_12x18.png) 13px 10px no-repeat #F33866;
+} 
 /* 购物车样式 */
 .ce_options .ce-cart .sidebar-link {
         height: 61px;
         background: url(http://s17.mogucdn.com/p1/160926/idid_ifqtqmdggzqwcyztmizdambqgyyde_17x13.png) 10px 9px no-repeat;    
+}
+.ce_options .ce-cart .sidebar-link:hover {
+    height: 61px;
+    background: url(http://s17.mogucdn.com/p1/160926/idid_ie3wmndegy4geyztmizdambqgayde_17x13.png) 10px 9px no-repeat #F33866;    
 }
 /* 消息样式 */
 .ce_options .ce-service .sidebar-link{   
     height: 52px;
     background-image: url(http://s17.mogucdn.com/p1/160926/idid_ie3wim3bmqywgyztmizdambqgayde_17x15.png);
 }
+.ce_options .ce-service .sidebar-link:hover{
+    background-image: url(http://s17.mogucdn.com/p1/160926/idid_ifrdgyzqmiywgyztmizdambqmeyde_17x15.png);
+
+}
 /* 优惠卷样式 */
 .ce_options .ce-coupon .sidebar-link{   
     height: 56px;
     background-image: url(http://s17.mogucdn.com/p1/160930/idid_ifrtoyjumjtgmmbvmizdambqhayde_18x13.png);
+}
+.ce_options .ce-coupon .sidebar-link:hover{
+    background-image: url(http://s16.mogucdn.com/p1/160926/idid_ifrggyjxmvsweyztmizdambqmeyde_18x13.png);   
 }
 /* 收藏样式 */
 .ce_options .ce-mark .sidebar-link{   
@@ -67,13 +82,24 @@
     padding-top: 41px;
     background-image: url(http://s16.mogucdn.com/p1/160926/idid_ifrdqyryguywgyztmizdambqmeyde_19x18.png);
 }
+.ce_options .ce-mark .sidebar-link:hover{
+    background-image: url(http://s16.mogucdn.com/p1/160926/idid_ifqwmn3gg4ywgyztmizdambqgyyde_19x18.png);
+ 
+}
 /* 足迹样式 */
 .ce_options .ce-footprint .sidebar-link{   
     height: 49px;
     padding-top: 44px;
     background-image: url(http://s16.mogucdn.com/p1/160926/idid_ie4tmmrwgazggyztmizdambqgqyde_15x21.png);
 }
-
+.ce_options .ce-footprint .sidebar-link:hover{
+    background-image: url(http://s17.mogucdn.com/p1/160926/idid_ifrdaolegizggyztmizdambqmeyde_15x21.png);
+ 
+}
+.ce_options .sidebar-link:hover {
+    color: #fff;
+    background-color: #F33866;
+}
 
 /* 下载二维码样式 */
 .ce_options .sidebar-qrcode {

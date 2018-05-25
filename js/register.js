@@ -76,7 +76,7 @@ define([
             var username = $("#usr").val();
             var pwd = $("#pwd").val();
             var opt = {
-                url:"http://localhost/meilishuo/php/user.php",
+                url:"http://localhost/meilishuo/program-2/php/user.php",
                 type:"POST",
                 data:{username:username,password:pwd,type:"register"}
             }
@@ -90,7 +90,7 @@ define([
                 $("#pwd").val("");
                 $("#pwd-r").val("");
                }else if(res == "1"){
-                window.location.href='http://localhost/meilishuo/login.html';
+                window.location.href='http://localhost/program-2/meilishuo/login.html';
    
                }
             })

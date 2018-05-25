@@ -22,11 +22,11 @@
     <div class="header_border">
         <div class="header">
             <ul>
-                <li class="go_home"><a><i class="home"></i>美丽说首页</a></li>
+                <li class="go_home"><a href="http://localhost/meilishuo/program-2/index.html"><i class="home"></i>美丽说首页</a></li>
                 <li><a><i class="weixin"></i>微信登录</a></li>
                 <li><a><i class="qq"></i>QQ登录</a></li>
-                <li><a>登录</a></li>
-                <li><a>注册</a></li>
+                <li><a href="http://localhost/meilishuo/program-2/login.html">登录</a></li>
+                <li><a href="http://localhost/meilishuo/program-2/register.html">注册</a></li>
                 <li class="drop">
                     <a><i class="collect"></i>我的收藏</a>
                     <ul class="ul_down">
@@ -234,8 +234,8 @@
                             </dd>
                         </dl>
                         <div class="commodity_buy">
-                               <a href="#" class="buy_now">立即购买</a>
-                               <a href="#" class="add_car">加入购物车</a>
+                               <a href="javascript:;" class="buy_now">立即购买</a>
+                               <a href="javascript:;" class="add_car">加入购物车</a>
                         </div>
                         <div class="commodity_social">
                             <div class="commoditySocial_love">
@@ -484,12 +484,12 @@
                 <div class="commodityContentMiddle_main">
                     <!-- 商品描述 -->
                     <div class="commodity_describe">
-                        <h1>商品描述</h1>
+                        <h1 id="shangpin">商品描述</h1>
                         <div class="commodityDescribe_text">推荐度:★★★★★ 牛仔微喇叭裤~~！这一类型的裤子近几年都炒鸡火哦 穿上都灰常显气质~~高腰款 上身特别显瘦 跟前几期的哪一款裤子款式差不多 但是又多了一些细节上面的改变 裤脚有不规则的拼接的感觉 很chic~ 显得腿又长又有版型的 而且裤脚是撕边的啦 百搭的款 怎么搭都不会出错哦 全国包邮，下单送运费险，支持7天无理由退货，无忧购物</div>
                     </div>
                     <!-- 产品参数 -->
                     <div class="commodity_parameter">
-                        <h1>产品参数</h1>
+                        <h1 id="chanpin">产品参数</h1>
                         <table class="parameter-table" >
                             <tbody>
                                 <tr class="">
@@ -521,13 +521,13 @@
                     </div>
                     <!-- 穿着效果 -->
                     <div class="commodity_effect">
-                        <h1>穿着效果</h1>
+                        <h1 id="chuanzuo">穿着效果</h1>
                         <img src="http://s3.mogucdn.com/mlcdn/c45406/171108_4ig90fk494153db8j42e6g0a4h9hl_700x700.jpg_750x999.jpg">
                         <img src="http://s3.mogucdn.com/mlcdn/c45406/171108_4ig90fk494153db8j42e6g0a4h9hl_700x700.jpg_750x999.jpg">
                         <img src="http://s3.mogucdn.com/mlcdn/c45406/171108_4ig90fk494153db8j42e6g0a4h9hl_700x700.jpg_750x999.jpg">
                         <img src="http://s3.mogucdn.com/mlcdn/c45406/171108_4ig90fk494153db8j42e6g0a4h9hl_700x700.jpg_750x999.jpg">
                         <img src="http://s3.mogucdn.com/mlcdn/c45406/171108_4ig90fk494153db8j42e6g0a4h9hl_700x700.jpg_750x999.jpg">
-                        <h1>细节做工</h1>
+                        <h1 id="xijie">细节做工</h1>
                         <img src="http://s3.mogucdn.com/mlcdn/c45406/171108_4ig90fk494153db8j42e6g0a4h9hl_700x700.jpg_750x999.jpg">
                         <img src="http://s3.mogucdn.com/mlcdn/c45406/171108_4ig90fk494153db8j42e6g0a4h9hl_700x700.jpg_750x999.jpg">
                         <img src="http://s3.mogucdn.com/mlcdn/c45406/171108_4ig90fk494153db8j42e6g0a4h9hl_700x700.jpg_750x999.jpg">
@@ -537,7 +537,7 @@
                         <img src="http://s3.mogucdn.com/p2/170317/77101615_6f3ak83kkl00329ged9249aa93ifb_1125x285.jpg_750x999.jpg">
                     </div>
                     <div class="commodity_size">
-                        <h1>尺码说明</h1>
+                        <h1 id="chima"> 尺码说明</h1>
                         <table class="size-table">
                             <thead>
                                 <tr>
@@ -595,22 +595,22 @@
                     <ul class="extranav-list">
                         <!-- 商品描述 -->
                         <li class="selected">
-                            <a href="javascript:;">商品描述</a>
+                            <a href="#shangpin">商品描述</a>
                         </li>
                         <!-- 产品参数 -->
                         <li>
-                            <a href="javascript:;">产品参数</a>
+                            <a href="#chanpin" >产品参数</a>
                         </li>
                         <!-- 模块列表 -->
                         <li>
-                            <a href="javascript:;">穿着效果</a>
+                            <a href="#chuanzuo" >穿着效果</a>
                         </li>
                         <li>
-                            <a href="javascript:;">细节做工</a>
+                            <a href="#xijie">细节做工</a>
                         </li>
                         <!-- 尺码说明 -->
                         <li>
-                            <a href="javascript:;">尺码说明</a>
+                            <a href="#chima">尺码说明</a>
                         </li>
                     </ul>
                 </div>
@@ -690,7 +690,8 @@
 <script src="public/js/require.js"></script>
 <script>
     require(["./public/js/require.config"],function(){
-        require(["details"])
+        require(["details"]);
+        require(["goTop"]);
         require(["fangdajing"],function(fangdajing){
            new fangdajing({
                 small_ele:".big_img",

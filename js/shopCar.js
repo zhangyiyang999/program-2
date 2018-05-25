@@ -131,11 +131,11 @@ define([
                     if (this.checked === false) {
                         var zhongjia = Number($(".cart_paybar_info_cost").html());
                         var xiaoji = Number($(this).parent().siblings(".xiaoji").find(".item_sum").html());
-                        $(".cart_paybar_info_cost").html(zhongjia+xiaoji);
+                        $(".cart_paybar_info_cost").html(zhongjia-xiaoji);
                     } else if (this.checked === true){
                         var zhongjia = Number($(".cart_paybar_info_cost").html());
                         var xiaoji = Number($(this).parent().siblings(".xiaoji").find(".item_sum").html());
-                        $(".cart_paybar_info_cost").html(zhongjia - xiaoji);
+                        $(".cart_paybar_info_cost").html(zhongjia+xiaoji);
                     }
                 })
             })

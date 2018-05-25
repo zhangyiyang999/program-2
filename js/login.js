@@ -6,7 +6,7 @@ define([
         var username = $("#usr").val();
         var pwd = $("#pwd").val();
         var opt = {
-            url:"http://localhost/meilishuo/php/user.php",
+            url:"http://localhost/meilishuo/program-2/php/user.php",
             type:"POST",
             data:{username:username,password:pwd,type:"login"}
         }
@@ -18,12 +18,12 @@ define([
                 $("#pwd").val("");
             }else{
                 $.cookie('username', username); 
-                window.location.href='http://localhost/meilishuo/index.html';
+                window.location.href='http://localhost/meilishuo/program-2/index.html';
             }
         })
     })
     $(".regist").on("click",function(){
-        window.location.href='http://localhost/meilishuo/register.html';
+        window.location.href='http://localhost/meilishuo/program-2/register.html';
     })
     
 });
